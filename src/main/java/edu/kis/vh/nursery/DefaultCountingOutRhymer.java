@@ -19,7 +19,7 @@ public class DefaultCountingOutRhymer {
         return total == 11;
     }
 
-    protected int peekaboo() {
+    protected int getNumbers() {
         if (callCheck())
             return -1;
         return numbers[total];
