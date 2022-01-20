@@ -3,8 +3,9 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 
     public static final int INT = -1;
-    public static final int INT1 = 11;
-    private final int[] numbers = new int[12];
+    public static final int INT1 = 12;
+    public static final int INT2 = 11;
+    private final int[] numbers = new int[INT1];
 
     public int total = INT;
 
@@ -18,7 +19,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean isFull() {
-        return total == INT1;
+        return total == INT2;
     }
 
     protected int getNumbers() {
