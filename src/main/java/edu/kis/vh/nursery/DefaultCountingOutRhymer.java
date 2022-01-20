@@ -7,35 +7,35 @@ public class DefaultCountingOutRhymer {
     public static final int INT2 = 11;
     private final int[] numbers = new int[INT1];
 
+    private int total = INT;
     public int getTotal() {
         return total;
     }
 
-    private int total = INT;
 
     public void countIn(int in) {
         if (!isFull())
-            numbers[++total] = in;
+            this.numbers[++total] = in;
     }
 
     public boolean callCheck() {
-        return total == INT;
+        return getTotal() == INT;
     }
 
     public boolean isFull() {
-        return total == INT2;
+        return getTotal() == INT2;
     }
 
     protected int getNumbers() {
         if (callCheck())
             return INT;
-        return numbers[total];
+        return this.numbers[getTotal()];
     }
 
     public int countOut() {
         if (callCheck())
             return INT;
-        return numbers[total--];
+        return this.numbers[total--];
     }
 
 }
