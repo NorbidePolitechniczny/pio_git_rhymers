@@ -1,5 +1,7 @@
 package edu.kis.vh.nursery.list;
 
+// W programie nie ma nieużywanych setterów.
+
 public class Node {
 
 	private int value;
